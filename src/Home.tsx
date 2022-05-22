@@ -208,7 +208,7 @@ const Home = (props: HomeProps) => {
     const [itemsRemaining, setItemsRemaining] = useState(0);
     const [isSoldOut, setIsSoldOut] = useState(false);
     const [payWithSplToken, setPayWithSplToken] = useState(false);
-    const [price, setPrice] = useState(0);
+    const [price, setPrice] = useState(0.242);
     const [priceLabel, setPriceLabel] = useState<string>("SOL");
     const [whitelistPrice, setWhitelistPrice] = useState(0);
     const [whitelistEnabled, setWhitelistEnabled] = useState(false);
@@ -588,11 +588,11 @@ const Home = (props: HomeProps) => {
                 <MintContainer>
                     <DesContainer>
                         <NFT elevation={3}>
-                            <h2>My NFT</h2>
+                            <h2>Spark a Joint & Mint a Ganjapreneur</h2>
                             <br/>
                             <div><Price
                                 label={isActive && whitelistEnabled && (whitelistTokenBalance > 0) ? (whitelistPrice + " " + priceLabel) : (price + " " + priceLabel)}/><Image
-                                src="cool-cats.gif"
+                                src="ganjapreneurs.gif"
                                 alt="NFT To Mint"/></div>
                             <br/>
                             {wallet && isActive && whitelistEnabled && (whitelistTokenBalance > 0) && isBurnToken &&
